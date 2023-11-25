@@ -19,6 +19,7 @@ function enviarDados() {
           sequencia: "1",
           nome: nome,
           tipo_pessoa: "F",
+          cpf_cnpj: cpf,
           cep: cep,
           fone: tel,
           situacao: "A",
