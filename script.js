@@ -5,7 +5,7 @@ function enviarDados() {
     {
       "contato": {
         "sequencia": "1",
-        "nome": "teste do joao versel",
+        "nome": "oloquinho meu",
         "tipo_pessoa": "F",
         "cep": "74553510",
         "situacao": "A"
