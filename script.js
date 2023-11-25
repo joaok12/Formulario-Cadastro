@@ -1,18 +1,20 @@
 function enviarDados() {
-  var nome = document.getElementById("nome").value;
-  var cep = document.getElementById("cep").value.toString();
-  var cidade = document.getElementById("cidade").value.toString();
-  var cpf = document.getElementById("cpf").value.toString();
-  var uf = document.getElementById("uf").value.toString();
-  var rua = document.getElementById("rua").value.toString();
-  var numero = document.getElementById("numero").value.toString();
-  var bairro = document.getElementById("bairro").value.toString();
-  var complemento = document.getElementById("complemento").value.toString();
-  var email = document.getElementById("email").value.toString();
+  let nome = document.getElementById("nome").value;
+  let cep = document.getElementById("cep").value.toString();
+  let cidade = document.getElementById("cidade").value.toString();
+  let cpf = document.getElementById("cpf").value.toString();
+  let uf = document.getElementById("uf").value.toString();
+  let rua = document.getElementById("rua").value.toString();
+  let numero = document.getElementById("numero").value.toString();
+  let bairro = document.getElementById("bairro").value.toString();
+  let complemento = document.getElementById("complemento").value.toString();
+  let email = document.getElementById("email").value.toString();
+  let tel = document.getElementById("tel").value.toString();
+
 
   var token =
     "2a12fe75fec2c9aa88b31fbb8bbcddcab300b4842874b8ef51d919eaa0acd1ac";
-  var contato = {
+  let contato = {
     contatos: [
       {
         contato: {
