@@ -1,56 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Cliente</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Cliente</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
-form {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-label, input {
-    display: block;
-    margin-bottom: 10px;
-}
+    form {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+    }
 
-button {
-    background-color: blue;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    label,
+    input,
+    select {
+      display: block;
+      margin-bottom: 10px;
+    }
 
-    </style>
-    <form id="cadastroCliente" onsubmit="enviarDados(); return false;">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+    button {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <img src="" alt="">
+  <form id="cadastroCliente" onsubmit="enviarDados(); return false;">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <label for="cpf">CPF:</label>
+    <input type="cpf" id="cpf" name="cpf" required>
 
-        <label for="cep">CEP</label>
-        <input type="cep" id="cep" name="cep" required>
+    <br><br>
 
-        <label for="tel">Telefone:</label>
-        <input type="tel" id="tel" name="tel" required>
+    <label for="cep">CEP:</label>
+    <input type="cep" id="cep" name="cep" required>
 
-        <button type="submit">Cadastrar</button>
-    </form>
+    <label for="cidade">Cidade:</label>
+    <input type="cidade" id="cidade" name="cidade" required>
 
-    <script src="script.js"></script>
+    <label for="uf">Estado:</label>
+    <select name="uf" id="uf">
+      <option value="AC">AC</option>
+      <option value="AL">AL</option>
+      <option value="AP">AP</option>
+      <option value="AM">AM</option>
+      <option value="BA">BA</option>
+      <option value="CE">CE</option>
+      <option value="DF">DF</option>
+      <option value="ES">ES</option>
+      <option value="GO">GO</option>
+      <option value="MA">MA</option>
+      <option value="MT">MT</option>
+      <option value="MS">MS</option>
+      <option value="MG">MG</option>
+      <option value="PA">PA</option>
+      <option value="PB">PB</option>
+      <option value="PR">PR</option>
+      <option value="PE">PE</option>
+      <option value="PI">PI</option>
+      <option value="RJ">RJ</option>
+      <option value="RN">RN</option>
+      <option value="RS">RS</option>
+      <option value="RO">RO</option>
+      <option value="RR">RR</option>
+      <option value="SC">SC</option>
+      <option value="SP">SP</option>
+      <option value="SE">SE</option>
+      <option value="TO">TO</option>
+    </select>
+
+
+
+
+    <label for="rua">Rua:</label>
+    <input type="rua" id="rua" name="rua" required>
+
+    <label for="numero">Numero:</label>
+    <input type="numero" id="numero" name="numero" required>
+
+    <label for="bairro">Bairro:</label>
+    <input type="bairro" id="bairro" name="bairro" required>
+
+    <label for="complemento">Complemento:</label>
+    <input type="complemento" id="complemento" name="complemento" required>
+
+    <br><br>
+
+
+    <label for="tel">Whatsapp:</label>
+    <input type="tel" id="tel" name="tel" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
